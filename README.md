@@ -1,5 +1,10 @@
 # 401 Python Data Structures and Algorithms
 
-Should be copied and moved to course repo as a reference folder for student's code challenge submissions.
+# Reverse an Array
+- Create an algorithm that akes an array as an argument. Without utilizing any of the built-in methods available to Python language, return an array with elements in reversed order.
+## Challenge
+- Find best Algorithm to use in reversing the array
+## Approach & Efficiency
+- I Used the for loop to iterate through the array.
 
-**NOTE:** may be replaced by cross course dsa repo
+![code-one](assets/list.jpg)
