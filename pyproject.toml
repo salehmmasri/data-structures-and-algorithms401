@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "data-structures-and-algorithms"
+name = "data-structures-and-algorithms401"
 version = "0.1.0"
 description = ""
 authors = ["JB <jb.tellez@gmail.com>"]
