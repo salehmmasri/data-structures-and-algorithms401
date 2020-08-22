@@ -8,7 +8,33 @@ class LinkedList():
     
     def __init__(self):
         self.head=None
+    def search_for(self,valuenum):
+        current = self.head
+        while current:
+            if current.value == valuenum :
+                return True
+            else:
+                current=current.next
+        return False   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+        
+                
+        
     def add_in_the_end(self,value):
         new_node=Node(value)
         if self.head is None:
@@ -45,9 +71,13 @@ if __name__=="__main__":
     # fruits.insert_to_the_first(3)
     # fruits.add_in_the_end(4)
     # print(fruits.)
-    ll = LinkedList()
-    ll.add_in_the_end('saleh')
-    ll.insert_to_the_first('aziz')
-    print(ll.__str__())
+    # ll = LinkedList() 
+    
+    # ll.add_in_the_end('saleh')
+    # ll.insert_to_the_first('aziz')
+    # ll.insert_to_the_first('aziz2')
+    # ll.add_in_the_end('saleh2')
+    
+    # print(ll.search_for('saleh2'))
 
 
