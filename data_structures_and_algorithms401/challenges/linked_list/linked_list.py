@@ -77,7 +77,6 @@ if __name__=="__main__":
     # ll.insert_to_the_first('aziz')
     # ll.insert_to_the_first('aziz2')
     # ll.add_in_the_end('saleh2')
-    
     # print(ll.search_for('saleh2'))
 
 
