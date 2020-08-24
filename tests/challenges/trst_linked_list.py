@@ -40,3 +40,23 @@ def test_insert_after():
     actual =lis.__str__()
     expected =  "{2}-->{3}-->Null""
     assert actual == expected
+
+def test_kth_from_end_1():
+    ll = Linkedlist()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = 2
+    actual =ll.kth_from_end(0)
+    assert expected == actual
+
+def test_kth_from_end_2():
+    ll = Linkedlist()
+    ll.append(1)
+    ll.append(3)
+    ll.append(8)
+    ll.append(2)
+    expected = 3
+    actual =ll.kth_from_end(2)
+    assert expected == actual
