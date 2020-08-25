@@ -35,32 +35,28 @@ class LinkedList(Node):
             current=self.head
             self.head=new_node
             new_node.next=current
-    
-    def insert_Before(self,value, find_val):
-        if LinkedList.search_for(find_val):
-            new_node=Node(value)
 
-            if self.head is None:
-                self.head=new_node
-            else:
-                try:
-                    current=self.head
-                    if current.value == find_val:
-                        old=current.next
-                        current.next=new_node
-                        new_node.next=old
+    def insert_Before(self,value, find_val):
+        new_node=Node(value)
+        if self.head is None:
+            self.head=new_node
+        else:
+            try:
+                current=self.head
+                if current.value == find_val:
+                    print('s node',self.head.value)
+                    new_node.next=self.head
+                    self.head=new_node
+                else :
                     while current.next.value != find_val:
                         current=current.next
                     if current.next.value == find_val:
                         old=current.next
                         current.next=new_node
                         new_node.next=old
-                    else :
-                        print("hi")
-                except:
-                    print("error")
-        else:
-            return 'err'
+                    
+            except:
+                print("error")
 
 
     def kth_from_end(self, k):
@@ -87,9 +83,7 @@ class LinkedList(Node):
                 current=self.head
                 while current.value != find_val:
                     current=current.next
-                    print("sa")
                 if current.value==find_val:
-                    print('aaa')
                     temp=current.next
                     current.next=new_node
                     new_node.next=temp
@@ -107,32 +101,13 @@ class LinkedList(Node):
         return output
 
 if __name__=="__main__":
-    lis= LinkedList()
-
-    lis.append(1)
-    lis.append(3)
-    lis.append(44)
-    lis.append(455)
-    lis.append(555)
-
-    # lis.insert_after(4,)
-    print(lis)
-    print(lis.kth_from_end(4))
-    # lis.append(2)
-    # lis.append(3)
-    # actual =lis.__str__()
-    # print(actual)
-    # lls.insert_Before(9,5)
-    # fruits = LinkedList()
-    # fruits.append(2)
-    # fruits.append('saleh')
-    # fruits.append('saleh2')
-    # fruits.append('saleh3')
-
-    # print(fruits)
-    # fruits.insert_Before(5,'6')
-    # # fruits.insert_Before(5,'saleh')
-    # print('saaaaa')
-    # print(fruits)
-    # print('after')
-    
+    linkedoop = LinkedList()
+    linkedoop.append(1)
+    linkedoop.append(2)
+    linkedoop.append(3)
+    linkedoop.append(4)
+    linkedoop.append(5)
+    linkedoop.append(6)
+    linkedoop.append(7)
+    linkedoop.insert_Before(22,1)
+    print(linkedoop)
