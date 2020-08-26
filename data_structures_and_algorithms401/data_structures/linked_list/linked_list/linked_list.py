@@ -101,13 +101,16 @@ class LinkedList(Node):
         return output
 
 if __name__=="__main__":
-    linkedoop = LinkedList()
-    linkedoop.append(1)
-    linkedoop.append(2)
-    linkedoop.append(3)
-    linkedoop.append(4)
-    linkedoop.append(5)
-    linkedoop.append(6)
-    linkedoop.append(7)
-    linkedoop.insert_Before(22,1)
-    print(linkedoop)
+    list_one = LinkedList()
+    list_two = LinkedList()
+    list_one.append('s')
+    list_one.append('a')
+    list_one.append('l')
+    list_two.append('e')
+    list_two.append('h')
+    list_two.append('m')
+    print(list_one)
+
+
+
+
