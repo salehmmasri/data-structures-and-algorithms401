@@ -8,4 +8,4 @@ ___
 # Approach & Efficiency
 - I Used the for loop to iterate through the array.
 
-![code-one](assets/list.jpg)
+![code-one](../assets/list.jpg)

@@ -62,68 +62,46 @@ def test_insert_after():
     expected =  "{2}-->{3}-->Null""
     assert actual == expected
 
-def test_kth_from_end_1():
-    ll = Linkedlist()
+def test_kth_greater_than_len():
+    ll = LinkedList()
     ll.append(1)
     ll.append(3)
     ll.append(8)
     ll.append(2)
-    expected = 2
-    actual =ll.kth_from_end(0)
+    expected = "value not found"
+    actual =ll.kth_from_end(5)
     assert expected == actual
 
 def test_kth_from_end_2():
-    ll = Linkedlist()
-    ll.append(1)
-    ll.append(3)
-    ll.append(8)
-    ll.append(2)
-    expected = 3
-    actual =ll.kth_from_end(2)
+    ll = LinkedList()
+    ll.append('s')
+    ll.append('a')
+    ll.append('l')
+    ll.append('e')
+    ll.append('h')
+    expected = 's'
+    actual =ll.kth_from_end(4)
     assert expected == actual
 
-def test_kth_from_end_1():
+def test_kth_negative():
     linkedoop = LinkedList()
     linkedoop.append(1)
     linkedoop.append(6)
     linkedoop.append(3)
     linkedoop.append(4)
-    linkedoop.append(5)
-    linkedoop.append(6)
-    linkedoop.append(7)
-    expected = 1
-    actual =linkedoop.kth_from_end(6)
+    expected = 'value not found'
+    actual =linkedoop.kth_from_end(-2)
     assert expected == actual
-def test_kth_from_end_3():
-    linkedoop = LinkedList()
-    linkedoop.append(1)
-    linkedoop.append(6)
-    linkedoop.append(3)
-    linkedoop.append(4)
-    linkedoop.append(5)
-    linkedoop.append(6)
-    linkedoop.append(7)
-    expected = 7
+
+def test_kth_from_end_size_is_one():
+    ll = LinkedList()
+    ll.append(1)
+    expected = 1
     actual =linkedoop.kth_from_end(0)
     assert expected == actual
 
 
-def test_kth_from_end_4():
-    linkedoop = LinkedList()
-    linkedoop.append(1)
-    linkedoop.append(2)
-    linkedoop.append(3)
-    linkedoop.append(4)
-    linkedoop.append(5)
-    linkedoop.append(6)
-    linkedoop.append(7)
-    linkedoop.insert_Before(55,1)
-    linkedoop.insert_Before(57,7)
-    actual=linkedoop.kth_from_end(8)
-    expected = 55
-    assert expected == actual
-
-def test_kth_from_end_5():
+def test_kth_from_end_happy_path():
     linkedoop = LinkedList()
     linkedoop.append(1)
     linkedoop.append(2)

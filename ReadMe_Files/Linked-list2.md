@@ -8,4 +8,4 @@ ___
 - also i use insert_after function to add a node after a specific index
 - and  method insert_before to add a node before  a specific index worst case for this fuction is O(n)
 
-![code-one](assets/ll.jpg)
+![code-one](../assets/ll.jpg)

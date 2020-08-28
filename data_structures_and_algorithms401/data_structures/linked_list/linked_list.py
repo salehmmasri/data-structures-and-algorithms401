@@ -9,6 +9,9 @@ class LinkedList(Node):
         self.head=None
         
     def search_for(self,valuenum):
+        """
+        * This function will search for a value in the Linked list and if it is not in the LL it will return False
+        """        
         current = self.head
         while current:
             if current.value == valuenum :
@@ -18,6 +21,9 @@ class LinkedList(Node):
         return False   
     
     def append(self,value):
+        """
+        * This function will append the new node at the end  of the Linked list 
+        """
         new_node=Node(value)
         if self.head is None:
             self.head=new_node
@@ -27,16 +33,10 @@ class LinkedList(Node):
                 current=current.next
             current.next=new_node
 
-    def insert(self, value):
-        new_node=Node(value)
-        if self.head is None:
-            self.head=new_node
-        else:
-            current=self.head
-            self.head=new_node
-            new_node.next=current
-
     def insert_Before(self,value, find_val):
+        """
+        * This function will insert the new node before the value you enterd and if value you enterd it'is not in the Linked list it will arise a error  
+        """
         new_node=Node(value)
         if self.head is None:
             self.head=new_node
@@ -60,6 +60,9 @@ class LinkedList(Node):
 
 
     def kth_from_end(self, k):
+        """
+        * This function will return the value of the node at specific index in the linked list 
+        """
         try:
             num = -1
             current = self.head
@@ -75,6 +78,9 @@ class LinkedList(Node):
             return "value not found"    
     
     def insert_after(self,value, find_val):
+        """
+        * This function will insert the new node after the value you enterd Linked list 
+        """
         new_node=Node(value)
         if self.head is None:
             self.head=new_node
@@ -91,7 +97,12 @@ class LinkedList(Node):
                     print('else')
             except:
                 print('The value is not Exist ')
+
+
     def __str__(self):
+        """
+        * This function will print all nodes of the Linked list 
+        """
         current = self.head
         output = ''
         while current:
@@ -100,16 +111,39 @@ class LinkedList(Node):
         output=f'"{output}Null"'
         return output
 
+    def insert(self, value):
+        """
+        * This function will insert the new node at the begining of the Linked list 
+        """
+        new_node=Node(value)
+        if self.head is None:
+            self.head=new_node
+        else:
+            current=self.head
+            self.head=new_node
+            new_node.next=current
+
+    # def reverse_ls(llone): 
+    #         prev = None
+    #         current = llone.head
+    #         while(current is not None): 
+    #             next = current.next
+    #             current.next = prev 
+    #             prev = current 
+    #             current = next
+    #         llone.head = prev 
+
+
 if __name__=="__main__":
-    list_one = LinkedList()
-    list_two = LinkedList()
-    list_one.append('s')
-    list_one.append('a')
-    list_one.append('l')
-    list_two.append('e')
-    list_two.append('h')
-    list_two.append('m')
-    print(list_one)
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(3)
+    ll.append(2)
+    ll2 = LinkedList()
+    ll2.append(5)
+    ll2.append(9)
+    ll2.append(4)
+    print(zip_linked_list(ll,ll2))
 
 
 
