@@ -16,4 +16,4 @@ ___
 
 ___
 
-![code-one](assets/ll.jpg)
+![code-one](../assets/list.jpg)
