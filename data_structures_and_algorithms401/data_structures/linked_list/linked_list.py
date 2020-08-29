@@ -8,7 +8,7 @@ class LinkedList(Node):
     def __init__(self):
         self.head=None
         
-    def search_for(self,valuenum):
+    def includes(self,valuenum):
         """
         * This function will search for a value in the Linked list and if it is not in the LL it will return False
         """        
