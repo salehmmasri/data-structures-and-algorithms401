@@ -18,9 +18,8 @@ def test_push_multiple_values_stack():
 def test_pop_stack():
     first_name = Stack()
     first_name.push('saleh','moh','ahmad')
-    first_name.pop()
-    actual = first_name
-    expected = "\n Stack [moh][saleh]"
+    actual = first_name.pop()
+    expected = "ahmad"
     assert actual == expected
 
 def test_make_stack_empty():
@@ -42,7 +41,7 @@ def test_peek_stack():
 def test_peek_on_empty_stack():
     first_name = Stack()
     actual = first_name.peek()
-    expected = "Stack is empty"
+    expected = "Empty"
     assert actual == expected
 
 def test_enqueue():
@@ -87,8 +86,7 @@ def test_empty_queue_after_multiple_dequeue():
     eaters.dequeue()
     eaters.dequeue()
     actual = eaters
-    expected = """Empty Queue!!!
-    Devs Details: 'NoneType' object has no attribute 'value'"""
+    expected = """Empty Queue!!!"""
     assert actual == expected
 
 
