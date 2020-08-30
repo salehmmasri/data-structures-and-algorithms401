@@ -29,9 +29,9 @@ class Queue:
         try:
             return self.front.value
         except AttributeError as e:
-            return f"Empty Queue!!!\nDevs Details: {e}"
+            return f"Empty Queue!!!"
         except Exception as e:
-            return f"Some other exception happened!!! {e}"
+            return f"Some other exception happened!!!"
 
     def __str__(self):
         """
@@ -82,11 +82,13 @@ class Stack:
 
     def pop(self):
         try:
+            temp = self.top.value
             self.top = self.top.next # top = node(5)
+            return temp
         except AttributeError as e:
-            return f"Empty Queue!!!\nDevs Details: {e}"
+            return f"Empty"
         except Exception as e:
-            return f"Some other exception happened!!! {e}"
+            return f"Some other exception happened!!!"
     def peek(self):
         try:
             return self.top.value
@@ -117,10 +119,8 @@ class Stack:
         output=f'\n Stack {output}'
         return output
 
-
 if __name__ == '__main__':
     # # print(eaters.peek())
-    eaters = Queue()
     # eaters.enqueue("Saed","Ahmad")
     # eaters.enqueue("Ahmad")
     
@@ -133,8 +133,11 @@ if __name__ == '__main__':
     # eaters.dequeue()
     # eaters.dequeue()
 
-    # print(eaters.peek())
     # eaters.dequeue()
     # eaters.dequeue()
+    # nums.enqueue()
+
+    # print(nums.peek())
     
-    print(eaters.peek())
+
+    
