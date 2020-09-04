@@ -23,4 +23,4 @@ def multi_bracket_validation(input):
         return False
 if __name__ == "__main__":
     # inp='{()[[Extra Characters]]}'
-    # print(multi_bracket_validation('[{{{}}))]'))
+    print(multi_bracket_validation('}'))
