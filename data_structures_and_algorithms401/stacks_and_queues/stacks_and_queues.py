@@ -121,23 +121,6 @@ class Stack:
         output=f'\n Stack {output}'
         return output
 
-class Animal:
-    eaters=Queue()
-    def __init__(self):
-        pass
-    def enqueue(self,val):
-        self.eaters.enqueue(val)
-    def dec(self):
-        return Animal.eaters.dequeue()
-class Dog(Animal):
-    pass
-    # def __init__(self,dog_name):
-    #     self.dog_name=dog_name
-
-class Cat(Animal):
-    pass
-    # def __init__(self,cat_name):
-    #     self.cat_name=cat_name
 
 
 
@@ -148,16 +131,6 @@ if __name__ == '__main__':
     # eaters=Queue()
     # eaters.enqueue("Saed","Ahmad")
     # eaters.enqueue("Ahmad")
-    dog=Dog()
-    dog2=Dog()
-    cat1=Cat()
-    cat2=Cat()
-    dog.enqueue(1)
-    dog2.enqueue(2)
-    cat1.enqueue(3)
-    cat1.enqueue(4)
-    
-    print(Animal.eaters)
     # print()
 
     # eaters.enqueue("Ahmad")
