@@ -29,7 +29,7 @@ class BinaryTree:
     def inOrder(self):
         try:    
             """
-            function return array depending on in order traversal 
+            function return array depending on in order traversal  
             """
             output = []
             def _walk(node):
@@ -58,7 +58,17 @@ class BinaryTree:
             _walk(self.root)
             return output
         except:
-            print("something wrong happened try again")       
+            print("something wrong happened try again")
+    def find_maximum_value(self):
+        """
+            function return the max value in the tree  
+        """
+        output=self.preOrder()
+        val=-1000000000
+        for i in range(len(output)):
+            if val < output[i]:
+                val=output[i]
+        return val
 
 
 
@@ -137,4 +147,6 @@ if __name__=='__main__':
     bst.add(42)
     bst.add(27)
     bst.add(50)
-    print(bst.postOrder())
+    # bt=BinaryTree()
+    # bt.root = Node( 7)
+    # print(bt.find_maximum_value())
