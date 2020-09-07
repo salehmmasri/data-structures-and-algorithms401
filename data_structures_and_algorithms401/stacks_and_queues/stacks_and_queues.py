@@ -127,6 +127,7 @@ class Stack:
     
 
 if __name__ == '__main__':
+    pass
     # print(eaters.peek())
     # eaters=Queue()
     # eaters.enqueue("Saed","Ahmad")

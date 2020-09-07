@@ -1,6 +1,7 @@
-import sys
-sys.path.append("/mnt/c/Users/STD/projects/401/data-structures-and-algorithms401/data_structures_and_algorithms401")
-from data_structures_and_algorithms401.stacks_and_queues import Stack
+# import sys
+# sys.path.append("/mnt/c/Users/STD/projects/401/data-structures-and-algorithms401/data_structures_and_algorithms401")
+from data_structures_and_algorithms401.stacks_and_queues.stacks_and_queues import Stack
+
 
 class PseudoQueue:
     def __init__(self):

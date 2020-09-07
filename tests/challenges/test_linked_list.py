@@ -52,14 +52,14 @@ def test_insert_after():
     lis.append(2)
     lis.append(3)
     actual =lis.insert_after(2,3)
-    expected =  "{2}-->{3}-->{2}-->Null""
+    expected =  "{2}-->{3}-->{2}-->Null"
     assert actual == expected
 def test_insert_after():
     lis= LinkedList()
     lis.append(2)
     lis.append(3)
     actual =lis.__str__()
-    expected =  "{2}-->{3}-->Null""
+    expected =  "{2}-->{3}-->Null"
     assert actual == expected
 
 def test_kth_greater_than_len():

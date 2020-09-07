@@ -63,13 +63,30 @@ class BinaryTree:
         """
             function return the max value in the tree  
         """
-        output=self.preOrder()
-        val=-1000000000
-        for i in range(len(output)):
-            if val < output[i]:
-                val=output[i]
-        return val
+        output=self.preOrder()   # => O(n)
 
+        try:
+            _max = output[0]
+            for i in range(1,len(output)):   # => O(n)
+                if _max < output[i]:
+                    _max = output[i]
+            return _max
+        except IndexError as e:
+            return f"Your tree might be empty. You got this error: {e}" 
+        except Exception as e:
+            return f"{e}"
+
+        # twice: 2 * thing   O(2*n)
+        # len(thing) * len(thing) O(n^2)
+
+
+
+        # pre-order: [1,2,3,4]
+        # val = -1M
+        # val = 1     i=0
+        # val = 2     i=1
+        # ...
+        # val = 4     i=3             
 
 
     def __str__(self):
@@ -150,3 +167,5 @@ if __name__=='__main__':
     # bt=BinaryTree()
     # bt.root = Node( 7)
     # print(bt.find_maximum_value())
+    bt = BinaryTree()
+    print(bt.find_maximum_value())
