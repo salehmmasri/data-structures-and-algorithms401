@@ -1,4 +1,5 @@
-from data_structures_and_algorithms401.challenges.queue_with_stacks.queue_with_stacks import *
+from data_structures_and_algorithms401.challenges.queue_with_stacks.queue_with_stacks import PseudoQueue
+# from data_structures_and_algorithms401.challenges.queue_with_stacks.queue_with_stacks import *
 
 def test_enqueue():
     nums = PseudoQueue()
