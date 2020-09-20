@@ -156,6 +156,7 @@ class BinarySearchTree(BinaryTree):
                 
 
 if __name__=='__main__':
+    ^\s*\d{3}-\d{3}-\d{4}\s*$
     bst = BinarySearchTree()
     bst.add(23)
     bst.add(10)
