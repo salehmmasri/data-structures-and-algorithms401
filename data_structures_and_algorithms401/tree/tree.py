@@ -155,15 +155,14 @@ class BinarySearchTree(BinaryTree):
             print("something wrong happened try again")       
                 
 
-if __name__=='__main__':
-    ^\s*\d{3}-\d{3}-\d{4}\s*$
-    bst = BinarySearchTree()
-    bst.add(23)
-    bst.add(10)
-    bst.add(12)
-    bst.add(4)
-    bst.add(42)
-    bst.add(27)
-    bst.add(50)
-    bt = BinaryTree()
+# if __name__=='__main__':
+    # bst = BinarySearchTree()
+    # bst.add(23)
+    # bst.add(10)
+    # bst.add(12)
+    # bst.add(4)
+    # bst.add(42)
+    # bst.add(27)
+    # bst.add(50)
+    # bt = BinaryTree()
     # print(bt.find_maximum_value())
