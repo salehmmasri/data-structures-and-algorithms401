@@ -1,3 +1,6 @@
+import sys 
+sys.path.append('/mnt/c/Users/STD/projects/401/data-structures-and-algorithms401')
+from data_structures_and_algorithms401.data_structures.graph.graph import Graph
 
 def test_add_node():
     graph = Graph()
